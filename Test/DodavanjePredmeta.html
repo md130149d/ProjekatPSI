@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/psipro/index.php/Welcome/logInProfesor" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/psipro/index.php/Welcome/logInProfesor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=SifZ</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=Sifra</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Dodaj predmet</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=sifraP</td>
+	<td>SS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=naziv</td>
+	<td>Sistemski</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=godina</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cenaposatu</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=sifra</td>
+	<td>tubic</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-danger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=h3.panel-title</td>
+	<td>Predmeti</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form[@id='lista']/table/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=th</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
