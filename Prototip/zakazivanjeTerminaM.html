@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- Tanic Snezana 237/13 -->
+<html lang="en">
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>By Okovani pakat</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="fullcalendar-1.6.2/fullcalendar/fullcalendar.css" />
+<link rel="stylesheet" href="css/calendar.css" />
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div id="header">
+        <div id="logged_in">
+<form id="j_id13" name="j_id13" method="post" action="profilS.html" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id13" value="j_id13">
+
+              <strong class="m">
+<script type="text/javascript" language="Javascript">function dpf(f) {var adp = f.adp;if (adp != null) {for (var i = 0;i < adp.length;i++) {f.removeChild(adp[i]);}}};function apf(f, pvp) {var adp = new Array();f.adp = adp;var i = 0;for (k in pvp) {var p = document.createElement("input");p.type = "hidden";p.name = k;p.value = pvp[k];f.appendChild(p);adp[i++] = p;}};function jsfcljs(f, pvp, t) {apf(f, pvp);var ft = f.target;if (t) {f.target = t;}f.submit();f.target = ft;dpf(f);};</script>
+<a href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id13'),{'j_id13:j_id15':'j_id13:j_id15'},'');}return false">Profesor(ime i prezime)</a></strong>
+              
+              <a href="index.html" id="logout">kraj rada</a><input type="hidden" name="javax.faces.ViewState" value="j_id6">
+</form></div>
+        
+        </div>
+        </div>
+        <div class="container">
+            <div id="sidebarL">
+            <div class="sidebar_box" id="glavni">
+            <div class="top"></div>
+              <div class="inside">
+<form id="menu" name="menu" method="post" action="" enctype="application/x-www-form-urlencoded" onsubmit="showLoadingScreen()">
+<input type="hidden" name="menu" value="menu">
+
+                  <img src="logo.png" alt="Servis za Demonstraturu">
+                  <div id="loadingScreen" style="display: none;">
+                    <div></div>
+                  </div>
+<ul id="menu:nav1">
+<li>
+                        <a href="pocetnaP.html">Pocetna</a>
+                    </li>
+                    <li>
+                        <a href="profilZ.html">Profil</a>
+                    </li>
+					<li>
+                        <a href="zakazivanjeTerminaM.html">Zakazivanje termina</a>
+                    </li>
+                    <li>
+                        <a href="izborDemonstratora.html">Izbor demonstratora</a>
+                    </li>
+                    <li>
+                        <a href="zakljucivanjeTermina.html">Zaključivanje termina</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Kraj rada</a>
+                    </li>
+</ul><input type="hidden" name="javax.faces.ViewState" value="j_id2">
+</form>
+              </div>
+            </div>
+            </div>
+            </div>
+        
+        <!-- /.container -->
+    
+
+
+<div class="inner">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                    </div>
+                </div>
+
+                <hr>
+                  <div class="row">
+                    <div class="col-lg-12">
+
+                <div class="box">
+  
+  <div class="body">
+      <div class="row">
+	  <div class="col-lg-3">
+	      <div class="well well-small">
+		  <div id="add-event-form">
+		      <fieldset>
+			  <legend>Dodaj termin</legend>
+			  <div class="form-group">
+                                            <label>Predmet</label>
+                                            <select class="form-control">
+                                                <option>PP1</option>
+                                                <option>PP2</option>
+                                                <option>ORT</option>
+                                            </select>
+                                        </div>
+			  
+			  <span class="help-block">Vreme termina</span>
+			  <div class="row form-group">
+			  <div class="col-lg-2">
+			  Od:
+			  </div>
+			  <div class="col-lg-4">
+			  <input id="timeOD" name="time" type="text" class="form-control input-small">
+			  </div>
+			  <div class="col-lg-2">
+			  Do:
+			  </div>
+			  <div class="col-lg-4">
+			  <input id="timeDO" name="time" type="text"  class="form-control input-small"> 
+			  </div>
+			  </div>
+			  
+			  <span class="help-block">Sala</span>
+			  <input id="class" name="class" type="text" placeholder="sala" class="form-control input-small">
+			  <br>
+			  <button id="add-event" type="button" class="btn btn-sm btn-default">Dodaj termin</button>
+		      </fieldset>
+		  </div>
+
+	      </div>
+	      
+	  </div>
+	  <div id="calendar" class="col-lg-9 fc fc-ltr"><table class="fc-header" style="width:100%"><tbody><tr><td class="fc-header-left"></td><td class="fc-header-center"><span class="fc-header-title"><h2>March 2016</h2></span></td><td class="fc-header-right"><span class="fc-button fc-button-prev fc-state-default fc-corner-left" unselectable="on"><i class="icon-chevron-left"></i></span><span class="fc-button fc-button-today fc-state-default fc-state-disabled" unselectable="on">today</span><span class="fc-button fc-button-month fc-state-default fc-state-active" unselectable="on">month</span><span class="fc-button fc-button-agendaWeek fc-state-default" unselectable="on">week</span><span class="fc-button fc-button-agendaDay fc-state-default" unselectable="on">day</span><span class="fc-button fc-button-next fc-state-default fc-corner-right" unselectable="on"><i class="icon-chevron-right"></i></span></td></tr></tbody></table><div class="fc-content" style="position: relative; min-height: 1px;"><div class="fc-view fc-view-month fc-grid" style="position: relative; min-height: 1px;" unselectable="on"><div style="position:absolute;z-index:8;top:0;left:0"></div><table class="fc-border-separate" style="width:100%" cellspacing="0"><thead><tr class="fc-first fc-last"><th class="fc-day-header fc-sun fc-widget-header fc-first" style="width: 123px;">Sun</th><th class="fc-day-header fc-mon fc-widget-header" style="width: 123px;">Mon</th><th class="fc-day-header fc-tue fc-widget-header" style="width: 123px;">Tue</th><th class="fc-day-header fc-wed fc-widget-header" style="width: 123px;">Wed</th><th class="fc-day-header fc-thu fc-widget-header" style="width: 123px;">Thu</th><th class="fc-day-header fc-fri fc-widget-header" style="width: 123px;">Fri</th><th class="fc-day-header fc-sat fc-widget-header fc-last">Sat</th></tr></thead><tbody><tr class="fc-week fc-first"><td class="fc-day fc-sun fc-widget-content fc-other-month fc-first" data-date="2016-02-28"><div style="min-height: 102px;"><div class="fc-day-number">28</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-mon fc-widget-content fc-other-month" data-date="2016-02-29"><div><div class="fc-day-number">29</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-tue fc-widget-content" data-date="2016-03-01"><div><div class="fc-day-number">1</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-wed fc-widget-content" data-date="2016-03-02"><div><div class="fc-day-number">2</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-thu fc-widget-content" data-date="2016-03-03"><div><div class="fc-day-number">3</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-fri fc-widget-content" data-date="2016-03-04"><div><div class="fc-day-number">4</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-sat fc-widget-content fc-last" data-date="2016-03-05"><div><div class="fc-day-number">5</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td></tr><tr class="fc-week"><td class="fc-day fc-sun fc-widget-content fc-first" data-date="2016-03-06"><div style="min-height: 101px;"><div class="fc-day-number">6</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-mon fc-widget-content" data-date="2016-03-07"><div><div class="fc-day-number">7</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-tue fc-widget-content" data-date="2016-03-08"><div><div class="fc-day-number">8</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-wed fc-widget-content" data-date="2016-03-09"><div><div class="fc-day-number">9</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-thu fc-widget-content" data-date="2016-03-10"><div><div class="fc-day-number">10</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-fri fc-widget-content" data-date="2016-03-11"><div><div class="fc-day-number">11</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-sat fc-widget-content fc-today fc-state-highlight fc-last" data-date="2016-03-12"><div><div class="fc-day-number">12</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td></tr><tr class="fc-week"><td class="fc-day fc-sun fc-widget-content fc-first" data-date="2016-03-13"><div style="min-height: 101px;"><div class="fc-day-number">13</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-mon fc-widget-content" data-date="2016-03-14"><div><div class="fc-day-number">14</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-tue fc-widget-content" data-date="2016-03-15"><div><div class="fc-day-number">15</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-wed fc-widget-content" data-date="2016-03-16"><div><div class="fc-day-number">16</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-thu fc-widget-content" data-date="2016-03-17"><div><div class="fc-day-number">17</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-fri fc-widget-content" data-date="2016-03-18"><div><div class="fc-day-number">18</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-sat fc-widget-content fc-last" data-date="2016-03-19"><div><div class="fc-day-number">19</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td></tr><tr class="fc-week"><td class="fc-day fc-sun fc-widget-content fc-first" data-date="2016-03-20"><div style="min-height: 101px;"><div class="fc-day-number">20</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-mon fc-widget-content" data-date="2016-03-21"><div><div class="fc-day-number">21</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-tue fc-widget-content" data-date="2016-03-22"><div><div class="fc-day-number">22</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-wed fc-widget-content" data-date="2016-03-23"><div><div class="fc-day-number">23</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-thu fc-widget-content" data-date="2016-03-24"><div><div class="fc-day-number">24</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-fri fc-widget-content" data-date="2016-03-25"><div><div class="fc-day-number">25</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-sat fc-widget-content fc-last" data-date="2016-03-26"><div><div class="fc-day-number">26</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td></tr><tr class="fc-week"><td class="fc-day fc-sun fc-widget-content fc-first" data-date="2016-03-27"><div style="min-height: 101px;"><div class="fc-day-number">27</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-mon fc-widget-content" data-date="2016-03-28"><div><div class="fc-day-number">28</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-tue fc-widget-content" data-date="2016-03-29"><div><div class="fc-day-number">29</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-wed fc-widget-content" data-date="2016-03-30"><div><div class="fc-day-number">30</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-thu fc-widget-content" data-date="2016-03-31"><div><div class="fc-day-number">31</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-fri fc-widget-content fc-other-month" data-date="2016-04-01"><div><div class="fc-day-number">1</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-sat fc-widget-content fc-other-month fc-last" data-date="2016-04-02"><div><div class="fc-day-number">2</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td></tr><tr class="fc-week fc-last"><td class="fc-day fc-sun fc-widget-content fc-other-month fc-first" data-date="2016-04-03"><div style="min-height: 105px;"><div class="fc-day-number">3</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-mon fc-widget-content fc-other-month" data-date="2016-04-04"><div><div class="fc-day-number">4</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-tue fc-widget-content fc-other-month" data-date="2016-04-05"><div><div class="fc-day-number">5</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-wed fc-widget-content fc-other-month" data-date="2016-04-06"><div><div class="fc-day-number">6</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-thu fc-widget-content fc-other-month" data-date="2016-04-07"><div><div class="fc-day-number">7</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-fri fc-widget-content fc-other-month" data-date="2016-04-08"><div><div class="fc-day-number">8</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td><td class="fc-day fc-sat fc-widget-content fc-other-month fc-last" data-date="2016-04-09"><div><div class="fc-day-number">9</div><div class="fc-day-content"><div style="position: relative; height: 0px;">&nbsp;</div></div></div></td></tr></tbody></table></div></div></div>
+      </div>
+  </div>
+
+
+            </div>
+
+</div>
+                      </div>
+                </div>
+
+
+</body>
+
+</html>

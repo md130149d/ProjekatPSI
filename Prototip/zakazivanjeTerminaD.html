@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>By Okovani pakat</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+	
+	    <div id="header">
+        <div id="logged_in">
+<form id="j_id13" name="j_id13" method="post" action="profilS.html" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id13" value="j_id13">
+
+             <strong class="m">
+<a href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id13'),{'j_id13:j_id15':'j_id13:j_id15'},'');}return false">Stefan Tubić</a></strong>
+              <strong class="indeks">(st130001z)</strong>
+              <a href="index.html" id="logout">kraj rada</a><input type="hidden" name="javax.faces.ViewState" value="j_id6">
+</form></div>
+        
+        </div>
+	
+	
+       <div class="container">
+            <div id="sidebarL">
+            <div class="sidebar_box" id="glavni">
+            <div class="top"></div>
+              <div class="inside">
+<form id="menu" name="menu" method="post" action="" enctype="application/x-www-form-urlencoded" onsubmit="showLoadingScreen()">
+<input type="hidden" name="menu" value="menu">
+
+                  <img src="logo.png" alt="Servis za Demonstraturu">
+                  <div id="loadingScreen" style="display: none;">
+                    <div></div>
+                  </div>
+<ul id="menu:nav1">
+<li>
+                         <a href="PocetnaP.html">Pocetna</a>
+                    </li>
+                    <li>
+                        <a href="profilZ.html">Profil</a>
+                    </li>
+					<li>
+                        <a href="zakazivanjeTerminaD.html">Zakazivanje termina</a>
+                    </li>
+                    <li>
+                        <a href="izborDemonstratora.html">Izbor demonstratora</a>
+                    </li>
+                    <li>
+                        <a href="zakljucivanjeTermina.html">Zaključivanje termina</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Kraj rada</a>
+                    </li>
+</ul><input type="hidden" name="javax.faces.ViewState" value="j_id2">
+</form>
+              </div>
+            </div>
+        </div>
+        </div>
+		         
+
+<div id="content">
+              <div class="top">
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="middle"></div>
+      		  </div>
+              <table width="100%">
+                <tbody>
+                <tr>
+                  <td class="inner3"><span id="bodyPanel">
+  
+<div class="container">
+    
+    
+
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Termin</h3>
+               
+            </div>
+            <table class="table" id="mojaTabela">
+                <thead>
+                    <tr class="filters">
+                        <th><input type="text" class="form-control" placeholder="Sifra predmeta" readonly></th>
+                        <th><input type="text" class="form-control" placeholder="Datum" readonly></th>
+						<th><input type="text" class="form-control" placeholder="Sala" readonly></th>
+                        <th><input type="text" class="form-control" placeholder="Vreme od" readonly></th>
+						<th><input type="text" class="form-control" placeholder="Vreme do" readonly></th>
+                    </tr>
+                </thead>
+                <tbody>
+				<tr>
+                    <td><input type="text" class="form-control" placeholder="Sifra predmeta"></td>
+				    <td><input type="date" class="form-control" ></th>
+					<td><input type="text" class="form-control" placeholder="Sala"></td>
+                    <td><input type="time" class="form-control" ></th>
+					<td><input type="time" class="form-control" ></th>
+				</tr>
+                </tbody>
+            </table>
+			<br>
+	<script>
+//	var index = 1;
+	var table = document.getElementById('mojaTabela'),
+		tbody = table.getElementsByTagName('tbody')[0],
+        clone = tbody.rows[0].cloneNode(true);
+		
+    function myCreateFunction() {
+	/*
+    var table = document.getElementById("mojaTabela");
+    var row = table.insertRow(-1);
+    var cell1=row.insertCell(0);
+            var t1=document.createElement("input");
+                t1.id = "txtName"+index;
+                cell1.appendChild(t1);
+            var cell2=row.insertCell(1);
+            var t2=document.createElement("input");
+                t2.id = "txtAge"+index;
+                cell2.appendChild(t2);
+            var cell3=row.insertCell(2);
+            var t3=document.createElement("input");
+                t3.id = "txtGender"+index;
+                cell3.appendChild(t3);
+            var cell4=row.insertCell(3);
+            var t4=document.createElement("input");
+                t4.id = "txtOccupation"+index;
+                cell4.appendChild(t4);
+				index++;
+				*/
+	var new_row = updateRow(clone.cloneNode(true), ++tbody.rows.length, true);
+	tbody.appendChild(new_row);
+}
+
+
+function updateRow(row, i, reset) {
+    //row.cells[0].innerHTML = i;
+/*
+    var inp1 = row.cells[1].getElementsByTagName('input')[0];
+    var inp2 = row.cells[2].getElementsByTagName('input')[0];
+    inp1.id = 'latbox' + i;
+    inp2.id = 'lngbox' + i;
+
+    if (reset) {
+        inp1.value = inp2.value = '';
+    }
+	*/
+   return row;
+}
+
+function myDeleteFunction() {
+    if(document.getElementById("mojaTabela").rows.length != 1) document.getElementById("mojaTabela").deleteRow(-1);
+}
+</script>
+</br>
+        </div>
+    </div>
+	
+	<input type="button" class="btn btn-danger" onclick="location.href='uspesnoZakazanTermin.html';" value="Potvrdi" />
+	<button type="button" class="btn btn-danger" onclick="myCreateFunction()">Novi termin</button>
+    <button type="button" class="btn btn-danger" onclick="myDeleteFunction()">Ukloni termin</button>
+</div>
+        </span>
+                  </td>
+                  <td class="inner4">
+                    <div class="inner4div">
+                    </div>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+    
+              <div class="bottom">
+                <div class="left"></div>
+                <div class="right"></div>
+                <div class="middle"></div>
+              </div>
+          </div>
+
+
+
+</body>
+
+</html>
